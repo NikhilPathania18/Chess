@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import { Chessboard } from 'react-chessboard';
 import './App.css';
-
+import { Chess } from 'chess.js';
+import { useState } from 'react';
+import Board from './components/chessboard';
 function App() {
   return (
+    <>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
+    <div style={{width: "400px"}}>
+    <Board />
+
+    </div>
+    </>
   );
 }
 
